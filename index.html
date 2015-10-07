@@ -30,12 +30,16 @@ $(function(){
     });
 });
 </script>
-</head><body id="home">
+</head>
+<style>
+#home .masthead .information{margin: 4em 120px 1em 120px !important;}
+</style>
+<body id="home">
 <div class="ui inverted masthead segment force">
   <div class="ui page grid">
     <div class="column">
       <div class="ui inverted menu">
-  <a class="header item" href="http://sundi3yansyah.herokuapp.com/">Libraries | DeVoresyah</a>
+  <a class="header item" href="http://sundi3yansyah.herokuapp.com/"><i class="fa fa-code"></i> Libraries | DeVoresyah</a>
   <div class="right menu">
     <div class="ui mobile dropdown link item">
       Menu
@@ -56,7 +60,7 @@ $(function(){
                           <a class="item" href="https://www.linkedin.com/in/devoresyah" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
                           <a class="item" href="https://www.facebook.com/DeVore48" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
       </div>
-</div>      <i class="fa fa-code fa-4x"></i>
+</div>
       <div class="ui hidden transition information force">
         <h1 class="none ui inverted header">
           DeVoresyah        </h1>
@@ -78,13 +82,13 @@ $(function(){
         <h1 class="ui inverted header">
           Ajax List Repository on GitHub
         </h1>
-        <div class="ui inverted horizontal divider"><i class="fa fa-github-square" style="font-size:5em;"></i></div>
+        <div class="ui inverted horizontal divider"><i class="<i class="fa fa-github-square"></i>" style="font-size:5em;"></i></div>
       </div>
     </div>
     <div class="row">
       <div class="nine wide column left aligned">
         <div class="ui center aligned stackable page grid">
-          <button class="get_repos ui teal massive left labeled icon button cmd"><i class="fa fa-github-square"></i>Get Repository with Ajax</button><br>
+          <button class="get_repos ui teal massive left labeled icon button cmd"><i class="fa fa-github"></i> Get Repository with Ajax</button><br>
           <div class="ui pointing below green" id="repos_count" style="margin-top: 0.5em;"></div>
         </div>
         <div class="ui styled fluid accordion" id="repo_list" style="box-shadow: none;margin-top: 1em;">
@@ -103,7 +107,7 @@ $(".get_repos").click(function() {
     success: function(result) {
       for( i in result ) {
         $("#repo_list").append(
-          "<div class='title'><i class='dropdown icon'></i>" + result[i].name + "<p class='ui blue tag label' style='float: right;'>" + result[i].language + "</p></div><div class='content'><p>" + result[i].description + "</p><p class='ui label purple'><i class='fork icon'></i> " + result[i].forks_count + "</p><p class='ui label purple'><i class='star icon'></i> " + result[i].stargazers_count + "</p><div class='ui mini labeled input' style='width:100%;margin-top:1em;'><div class='ui label'><i class='lock icon' style='color:#5bbd72;'> https://</i></div><input type='text' value='github.com/" + result[i].full_name + "'></div></div>"
+          "<div class='title'><i class='dropdown icon'></i>" + result[i].name + "<p class='ui blue tag label' style='float: right;'>" + result[i].language + "</p></div><div class='content'><p>" + result[i].description + "</p><p class='ui label purple'><i class='fa fa-code-fork'></i> " + result[i].forks_count + "</p><p class='ui label purple'><i class='fa fa-star'></i> " + result[i].stargazers_count + "</p><div class='ui mini labeled input' style='width:100%;margin-top:1em;'><div class='ui label'><i class='fa fa-lock' style='color:#5bbd72;'> https://</i></div><input type='text' value='github.com/" + result[i].full_name + "'></div></div>"
           );
         // For debug result by ID
         // console.log("i: " + i);
@@ -122,8 +126,8 @@ $(".get_repos").click(function() {
   <div class="ui center aligned stackable page grid">
     <div class="two center floated column row">
       <div class="ui wide column">
-        <div class="ui horizontal divider"><i class="github square icon" style="font-size: 7em;"></i></div>
-        <a class="huge ui blue button" href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/ajax-repos" target="_blank"><i class="github alternate icon"></i>Fork this Repository</a>
+        <div class="ui horizontal divider"><i class="fa fa-github-square"></i></div>
+        <a class="huge ui blue button" href="https://github.com/SunDi3yansyah/GitHubAPI-CodeIgniter-SemanticUI/tree/master/application/modules/ajax-repos" target="_blank"><i class="fa fa-github"></i> Fork this Repository</a>
       </div>
     </div>
   </div>
