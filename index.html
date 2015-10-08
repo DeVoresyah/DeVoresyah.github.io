@@ -86,17 +86,15 @@
         <div class="row">
           <div class="nine wide column left aligned">
             <div class="ui center aligned stackable page grid">
-              <button class="get_repos ui teal massive left labeled icon button cmd"><i class="fa fa-github"></i> Get Repository</button><br>
-              <div class="ui pointing below green" id="repos_count" style="margin-top: 0.5em;"></div>
-            </div>
-            <div class="ui styled fluid accordion" id="repo_list" style="box-shadow: none;margin-top: 1em;">
+              <div class="row cmd" id="repo_list" style="box-shadow: none;margin-top: 1em;">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <script>
-    $(".get_repos").click(function() {
+    $(document).ready(function() {
     $.ajax({
     type: "GET",
     url: "https://api.github.com/users/DeVoresyah/repos",
@@ -104,7 +102,20 @@
     success: function(result) {
     for( i in result ) {
     $("#repo_list").append(
-    "<div class='title'><i class='dropdown icon'></i>" + result[i].name + "<p class='ui blue tag label' style='float: right;'>" + result[i].language + "</p></div><div class='content'><p>" + result[i].description + "</p><p class='ui label purple'><i class='fa fa-code-fork'></i> " + result[i].forks_count + "</p><p class='ui label purple'><i class='fa fa-star'></i> " + result[i].stargazers_count + "</p><div class='ui mini labeled input' style='width:100%;margin-top:1em;'><div class='ui label'><i class='fa fa-lock' style='color:#5bbd72;'> https://</i></div><input type='text' value='github.com/" + result[i].full_name + "'></div></div>"
+    "<div class='five wide column left aligned'>
+  <div class='ui card' style='width: initial;'>
+    <div class='content'>
+      <a class='header' href='" + result[i].html_url +"' target='_blank'>" + result[i].name +"</a>
+      <div class='description'>" + result[i].description + "</div>
+    </div>
+    <div class='extra content'>
+      <a class='left floated' href='" + result[i].forks_url + "' target='_blank'>" + result[i].forks_count + " <i class='fork icon'></i>Fork</a>
+      <a class='right floated' href='" + result[i].html_url +"' target='_blank'>" + result[i].stargazers_count + " <i class='star icon'></i> Star</a>
+    </div>
+    <div class='ui bottom attached button'>
+    <i class='tag icon'></i> " + result[i].language + "</div>
+  </div>
+</div>"
     );
     // For debug result by ID
     // console.log("i: " + i);
