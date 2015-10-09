@@ -100,8 +100,11 @@
     dataType: "json",
     success: function(result) {
     for( i in result ) {
+      var tahun = result[i].created_at.substring(0,4);
+      var bulan = result[i].created_at.substring(5,6);
+      var hari = result[i].created_at.substring(7,8);
     $("#repo_list").append(
-    "<div class='five wide column left aligned'><div class='ui card' style='width: initial;'><div class='content'><a class='header' href='" + result[i].html_url + "' target='_blank'>" + result[i].name + "</a><div class='description'><div class='meta'><i class='fa fa-calendar'></i> " + result[i].created_at.substring(0,11) + " <i class='fa fa-clock-o'></i>" + result[i].created_at.substring(11,17) + "</div></div><div class='ui horizontal divider'><i class='fa fa-github-square' style='font-size: 2em;'></i></div><div class='description'>" + result[i].description + "</div></div><div class='extra content'><a class='left floated' href='" + result[i].forks_url + "' target='_blank'>" + result[i].forks_count + " <i class='fa fa-code-fork'></i> Fork</a><a class='right floated' href='" + result[i].html_url + "' target='_blank'>" + result[i].stargazers_count + " <i class='fa fa-star'></i> Star</a></div><div class='ui bottom attached button'><i class='fa fa-tag'></i> " + result[i].language + "</div></div></div>"
+    "<div class='five wide column left aligned'><div class='ui card' style='width: initial;'><div class='content'><a class='header' href='" + result[i].html_url + "' target='_blank'>" + result[i].name + "</a><div class='description'><div class='meta'><i class='fa fa-calendar'></i> " + hari + bulan + tahun + " <i class='fa fa-clock-o'></i> " + result[i].created_at.substring(11,16) + "</div></div><div class='ui horizontal divider'><i class='fa fa-github-square' style='font-size: 2em;'></i></div><div class='description'>" + result[i].description + "</div></div><div class='extra content'><a class='left floated' href='" + result[i].forks_url + "' target='_blank'>" + result[i].forks_count + " <i class='fa fa-code-fork'></i> Fork</a><a class='right floated' href='" + result[i].html_url + "' target='_blank'>" + result[i].stargazers_count + " <i class='fa fa-star'></i> Star</a></div><div class='ui bottom attached button'><i class='fa fa-tag'></i> " + result[i].language + "</div></div></div>"
     );
     // For debug result by ID
     // console.log("i: " + i);
