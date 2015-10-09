@@ -101,7 +101,7 @@
     success: function(result) {
     for( i in result ) {
     $("#repo_list").append(
-    "<div class='five wide column left aligned'><div class='ui card' style='width: initial;'><div class='content'><a class='header' href='" + result[i].html_url + "' target='_blank'>" + result[i].name + "</a><div class='description'>" + result[i].description + "</div></div><div class='extra content'><a class='left floated' href='" + result[i].forks_url + "' target='_blank'>" + result[i].forks_count + " <i class='fork icon'></i>Fork</a><a class='right floated' href='" + result[i].html_url + "' target='_blank'>" + result[i].stargazers_count + " <i class='star icon'></i> Star</a></div><div class='ui bottom attached button'><i class='tag icon'></i> " + result[i].language + "</div></div></div>"
+    "<div class='five wide column left aligned'><div class='ui card' style='width: initial;'><div class='content'><a class='header' href='" + result[i].html_url + "' target='_blank'>" + result[i].name + "</a><div class='description'>" + result[i].description + "</div></div><div class='extra content'><a class='left floated' href='" + result[i].forks_url + "' target='_blank'>" + result[i].forks_count + " <i class='fa fa-code-fork'></i> Fork</a><a class='right floated' href='" + result[i].html_url + "' target='_blank'>" + result[i].stargazers_count + " <i class='fa fa-star'></i> Star</a></div><div class='ui bottom attached button'><i class='fa fa-tag'></i> " + result[i].language + "</div></div></div>"
     );
     // For debug result by ID
     // console.log("i: " + i);
