@@ -1,7 +1,7 @@
 ---
 layout: all-post
 title: Show All Post By Tag "jQuery"
-permalink: /tag/jquery/
+permalink: /tag/jQuery/
 ---
 <div class="eight wide column">
 	<div class="ui segment">
@@ -17,7 +17,7 @@ permalink: /tag/jquery/
                 <div class="content">
                   <h3><a href="{{ post.url | prepend: site.baseurl }}" class="header">{{ post.title }}</a></h3>
                   <div class="meta">
-                    <div class="cinema"><i class="fa fa-calendar"></i> {{ post.date | date: "%-d %b %Y" }} <i class="fa fa-clock-o"></i> {{ post.date | date: "%H:%M:%S" }}</div>
+                    <div class="cinema"><i class="fa fa-calendar"></i> {{ post.date | date: "%-d %b %Y" }} <i class="fa fa-clock-o"></i> {{ post.date | date: "%H:%M" }}</div>
                   </div>
                   <div class="ui horizontal divider"><i class="fa fa-github-square" style="font-size: 2em;"></i></div>
                   <div class="description">

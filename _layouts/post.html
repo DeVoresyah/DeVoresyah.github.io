@@ -13,7 +13,7 @@ layout: posting
 		<div class="ui bottom attached active tab" data-tab="post">
 			<div class="ui piled segment">
 				<h2 class="ui header">{{ page.title }}</h2>
-				<p class="post-meta"><div class="ui label"><i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}</div> <div class="ui label"><i class="fa fa-clock-o"></i> {{ page.date | date: "%H:%M:%S" }}</div> {% for tags in page.tags %}<a href="/tag/{{ tags }}/" class="ui label"><i class="fa fa-tag"></i> {{ tags }}</a> {% endfor %}</p>
+				<p class="post-meta"><div class="ui label"><i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}</div> <div class="ui label"><i class="fa fa-clock-o"></i> {{ page.date | date: "%H:%M" }}</div> {% for tags in page.tags %}<a href="/tag/{{ tags }}/" class="ui label"><i class="fa fa-tag"></i> {{ tags }}</a> {% endfor %}</p>
 				<hr/>
 				{{ content }}
 			</div>
