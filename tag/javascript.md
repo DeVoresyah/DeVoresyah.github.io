@@ -1,7 +1,7 @@
 ---
 layout: all-post
 title: Show All Post By Tag "Javascript"
-permalink: /tag/Javascript/
+permalink: /tag/javascript/
 ---
 <div class="eight wide column">
 	<div class="ui segment">

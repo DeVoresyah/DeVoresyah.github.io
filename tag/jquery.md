@@ -1,7 +1,7 @@
 ---
 layout: all-post
 title: Show All Post By Tag "jQuery"
-permalink: /tag/jQuery/
+permalink: /tag/jquery/
 ---
 <div class="eight wide column">
 	<div class="ui segment">

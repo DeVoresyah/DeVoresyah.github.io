@@ -1,7 +1,7 @@
 ---
 layout: all-post
 title: Show All Post By Tag "Blogger"
-permalink: /tag/Blogger/
+permalink: /tag/blogger/
 ---
 <div class="eight wide column">
 	<div class="ui segment">

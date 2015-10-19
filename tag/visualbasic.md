@@ -1,17 +1,17 @@
 ---
 layout: all-post
-title: Show All Post By Tag "Template"
-permalink: /tag/template/
+title: Show All Post By Tag "Visual Basic"
+permalink: /tag/visual-basic/
 ---
 <div class="eight wide column">
 	<div class="ui segment">
 	<div class="ui breadcrumb">
 		<a href="/allpost/" class="section"><i class="fa fa-home"></i></a>
 		<span class="divider">/</span>
-		<span class="active section">Post By "Template"</span>
+		<span class="active section">Post By "Visual Basic"</span>
 	</div>
 	</div>
-    {% for post in site.tags.Template reserved %}
+    {% for post in site.tags['Visual Basic'] %}
             <div class="ui segment divided items left aligned">
               <div class="item">
                 <div class="content">
