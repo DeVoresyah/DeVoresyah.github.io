@@ -24,5 +24,5 @@ sitemap: false
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-    <gcse:search queryParameterName="q"></gcse:search>
+    <gcse:searchresults-only queryParameterName="q"></gcse:searchresults-only>
 </div>
