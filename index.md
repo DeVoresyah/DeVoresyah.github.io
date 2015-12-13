@@ -37,7 +37,7 @@ layout: indexed
               </div>
             </div>
     {% endfor %}
-    <a class="huge ui blue button" href="#" target="_blank">See All Articles <i class="fa fa-chevron-right"></i></a>
+    <a class="huge ui blue button" href="/allpost/" target="_blank">See All Articles <i class="fa fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
