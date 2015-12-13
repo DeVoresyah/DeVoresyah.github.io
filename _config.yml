@@ -11,3 +11,11 @@ github_username:  jekyll
 markdown: kramdown
 paginate: 5
 paginate_path: "/allpost/page/:num"
+authors:
+  devoresyah:
+    name: DeVoresyah ArEst
+    display_name: DeVoresyah
+    email: de.voresyah@gmail.com
+    web: http://devoresyah.github.io
+    twitter: DeVoresyah
+    github: DeVoresyah

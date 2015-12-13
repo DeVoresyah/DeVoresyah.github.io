@@ -1,6 +1,8 @@
 ---
 layout: posting
+author: devoresyah
 ---
+{% assign author = site.authors[page.author] %}
 <div class="ui centered grid" style="margin-bottom:15px;margin-top:10px;">
 	<div class="three wide column">
 		<div id="tabber" class="ui vertical fluid tabular menu">
@@ -13,10 +15,12 @@ layout: posting
 		<div class="ui bottom attached active tab" data-tab="post">
 			<div class="ui piled segment">
 				<h2 class="ui header">{{ page.title }}</h2>
-				<p class="post-meta"><div class="ui label"><i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}</div> <div class="ui label"><i class="fa fa-clock-o"></i> {{ page.date | date: "%H:%M" }}</div> 
+				<p class="post-meta">
+				<div class="ui label"><i class="fa fa-calendar"></i> {{ page.date | date: "%-d %b %Y" }}</div> <div class="ui label"><i class="fa fa-clock-o"></i> {{ page.date | date: "%H:%M" }}</div> 
 				{% for tags in page.tags %}
 				<a href="/tag/{{ tags | slugify }}/" class="ui label"><i class="fa fa-tag"></i> {{ tags }}</a> 
-				{% endfor %}
+				{% endfor %} 
+				<a href="https://github.com/{{ author.github }}" class="ui label"><i class="fa fa-user"></i> {{ author.display_name }}</a>
 				</p>
 				<hr/>
 				{{ content }}

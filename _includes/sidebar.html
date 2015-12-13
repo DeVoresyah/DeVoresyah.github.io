@@ -7,6 +7,11 @@
 </form>
 </div>
 
+		<div class="ui segment">
+			<h3 class="ui header"><i class="fa fa-user"></i> About Me</h3>
+			<p>I was a regular programmer who has expertise in HTML, CSS, JS, PHP, and multiple programming languages desktop.<br/><a href="/about" title="See More About Me">See More ...</a></p>
+		</div>
+
 		<div class="kotak-twitter" style="margin-top:10px">
 		<a class="twitter-timeline" href="https://twitter.com/DeVoresyah" data-widget-id="259635400602173440">Tweet oleh @DeVoresyah</a>
 		<script>
@@ -24,9 +29,14 @@
 		</div>
 
 		<div class="ui segment">
-			<h3 class="ui header">Tags</h3>
+			<h3 class="ui header"><i class="fa fa-tags"></i> Tags</h3>
 {% assign tags = site.tags | sort %}
 {% for tag in tags %}
 <a href="/tag/{{ tag | first | slugify }}/" class="ui label"><i class="fa fa-tag"></i> {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a>
 {% endfor %}
+		</div>
+
+		<div class="my-octocard">
+		<script data-name="DeVoresyah" data-modules="base,details,stats,repos,eventsStatis,orgs" data-reposNum="3" src="http://octocard.in/o.js" />
+		</script>
 		</div>

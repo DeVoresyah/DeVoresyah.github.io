@@ -1,6 +1,7 @@
 ---
 layout: all-post
 title: All Post
+author: devoresyah
 ---
 <div class="nine wide column">
 	<div class="ui segment">
@@ -11,12 +12,13 @@ title: All Post
 	</div>
 	</div>
     {% for post in paginator.posts %}
+    {% assign author = site.authors[page.author] %}
             <div class="ui segment divided items left aligned">
               <div class="item">
                 <div class="content">
                   <h3><a href="{{ post.url | prepend: site.baseurl }}" class="header">{{ post.title }}</a></h3>
                   <div class="meta">
-                    <div class="cinema"><i class="fa fa-calendar"></i> {{ post.date | date: "%-d %b %Y" }} <i class="fa fa-clock-o"></i> {{ post.date | date: "%H:%M" }}</div>
+                    <div class="cinema"><i class="fa fa-calendar" style="margin-right:0;"></i> {{ post.date | date: "%-d %b %Y" }} <i class="fa fa-clock-o" style="margin-left:.1em;margin-right:0;"></i> {{ post.date | date: "%H:%M" }} <i class="fa fa-comments-o" style="margin-left:.1em;margin-right:0;"></i> <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">0 Comments</a> <a href="https://github.com/{{ author.github }}" style="margin-left:.1em;"><img alt="DeVoresyah" height="16" src="https://avatars1.githubusercontent.com/u/8052370?v=3&s=36" width="16" style="border-radius: 3px; box-shadow: none; box-sizing: border-box; border: none; vertical-align: top;"/> {{ author.display_name }}</a></div>
                   </div>
                   <div class="ui horizontal divider"><i class="fa fa-github-square" style="font-size: 2em;"></i></div>
                   <div class="description">
