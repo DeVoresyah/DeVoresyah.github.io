@@ -4,8 +4,8 @@ email: de.voresyah@gmail.com
 description: All DeVoresyah Repository With Blog Content
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://DeVoresyah.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: DeVoresyah
+github_username:  DeVoresyah
 
 # Build settings
 markdown: kramdown
