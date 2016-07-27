@@ -2,7 +2,6 @@
 layout: posting
 author: devoresyah
 ---
-{% assign author = site.authors[page.author] %}
 <div class="ui centered grid" style="margin-bottom:15px;margin-top:10px;">
 	<div class="three wide column">
 		<div id="tabber" class="ui vertical fluid tabular menu">
@@ -20,7 +19,7 @@ author: devoresyah
 				{% for tags in page.tags %}
 				<a href="/tag/{{ tags | slugify }}/" class="ui label"><i class="fa fa-tag"></i> {{ tags }}</a> 
 				{% endfor %} 
-				<a href="https://github.com/{{ author.github }}" class="ui label"><i class="fa fa-user"></i> {{ author.display_name }}</a>
+				<a href="https://github.com/DeVoresyah" class="ui label"><i class="fa fa-user"></i> DeVoresyah</a>
 				</p>
 				<hr/>
 				{{ content }}
