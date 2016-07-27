@@ -9,7 +9,7 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-paginate: 2
+paginate: 3
 paginate_path: "/allpost/page/:num"
 authors:
   devoresyah:
