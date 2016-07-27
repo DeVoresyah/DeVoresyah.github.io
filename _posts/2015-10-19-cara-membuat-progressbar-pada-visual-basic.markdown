@@ -9,6 +9,8 @@ tags:
 <img class="ui centered big image" src="/img/article/membuat-progressbar-pada-vb.png"/>
 <p>Mungkin beberapa sudah tahu bagaimana caranya membuat progressbar yang dapat berjalan pada visual basic, tetapi masih ada juga yang belum mengetahuinya. Untuk itu pada artikel kali ini saya akan berbagi tutorialnya, disini saya menggunakan fungsi dari komponen <code>Timer</code> karena itu lebih efektif dan dapat berjalan secara otomatis. Saya sudah menyiapkan source code projectnya juga apabila masih kesulitan dalam membuat ini.</p>
 
+<!--excerpt-->
+
 <h3 class="ui header">Komponen :</h3>
 <ul class="ui list">
 	<li>1 Timer</li>

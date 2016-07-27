@@ -12,6 +12,8 @@ tags:
 
 <p>Kemudian apabila pengunjung blog Anda memiliki masalah koneksi yang lambat, template ini juga menawarkan fitur <b>Fast Loading</b> agar meskipun diakses dengan internet yang tidak terlalu cepat masih bisa dilihat oleh semua orang.</p>
 
+<!--excerpt-->
+
 <h3 class="ui header">Responsive</h3>
 <p>Saya sangat mengutamakan <strong>Responsive Web Design</strong> pada template ini, itu agar memudahkan pengunjung untuk mengakses blog yang menggunakan template ini. Tidak peduli mereka mau melihatnya melalui pc, tablet, maupun smartphone.</p>
 

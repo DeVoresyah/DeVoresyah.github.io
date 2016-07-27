@@ -11,6 +11,7 @@ github_username:  DeVoresyah
 markdown: kramdown
 paginate: 3
 paginate_path: "/allpost/page/:num"
+excerpt_separator: "<!--excerpt-->"
 authors:
   devoresyah:
     name: DeVoresyah ArEst

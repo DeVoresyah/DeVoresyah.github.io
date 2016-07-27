@@ -11,6 +11,8 @@ tags:
 
 <p>Mari kita coba buat aplikasi sederhana untuk memanggil form lain, siapkan komponen-komponen yang harus ada di bawah ini</p>
 
+<!--excerpt-->
+
 <h3 class="ui header">Komponen :</h3>
 <ul class="ui list">
 	<li>1 Timer</li>

@@ -10,6 +10,8 @@ tags:
 <img class="ui centered big image" src="/img/article/countdown-timer-with-jquery.png"/>
 <p>Sudah tidak asing lagi dengan jQuery, yang membantu programmer untuk menggunakan fungsi javascript dengan mudah. Kali ini saya ingin membagikan tutorial untuk membuat <b>waktu hitung mundur</b> menggunakan jQuery. Countdown timer biasanya digunakan pada situs-situs berbagi file yang mengharuskan pengunjungnya menunggu beberapa detik sebelum dapat mengunduh file yang diinginkan, dan masih banyak hal lain yang dapat dilakukan dengan countdown timer ini.</p>
 
+<!--excerpt-->
+
 <h3 class="ui header">Bahan :</h3>
 <ul class="ui list">
 	<li><a href="https://github.com/DeVoresyah/Countdown-Timer-With-Button-jQuery/blob/master/component.css">component.css</a></li>
