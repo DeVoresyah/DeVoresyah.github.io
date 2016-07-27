@@ -22,7 +22,7 @@ author: devoresyah
                   </div>
                   <div class="ui horizontal divider"><i class="fa fa-github-square" style="font-size: 2em;"></i></div>
                   <div class="description">
-                    <p>{{ post.excerpt }}</p>
+                    <p>{{ post.content | strip_html | truncatewords: 150 }}</p>
                   </div>
                   <div class="extra">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="ui right floated primary button">
