@@ -67,7 +67,7 @@ function checkOtp(account, secretkey) {
        offset = hex2dec(hmac.substring(hmac.length - 1));
     }
 
-    var qrcode = "https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=200x200&chld=M|0&cht=qr&chl=otpauth://totp/" + account + "%3Fsecret%3D" + secretkey
+    var qrcode = "https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=200x200&chld=M|0&cht=qr&chl=otpauth://totp/" + account + "%3Fsecret%3D" + secretkey;
     var otp = (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec('7fffffff')) + '';
     otp = (otp).substr(otp.length - 6, 6);
 
