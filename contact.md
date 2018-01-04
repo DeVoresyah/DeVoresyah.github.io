@@ -4,7 +4,7 @@ title:  "Contact Me"
 permalink: /contact/
 ---
 <p>Anda dapat menghubungi saya melalui akun resmi media sosial saya dibawah ini :</p>
-<button onclick="window.location='http://facebook.com/DeVore48';" class="ui facebook button">
+<button onclick="window.location='http://facebook.com/DeVoresyah';" class="ui facebook button">
   <i class="fa fa-facebook"></i>
   Facebook
 </button>
