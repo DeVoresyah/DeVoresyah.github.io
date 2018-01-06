@@ -43,7 +43,7 @@ final_slug = clean_slug.join('')
 
 system('mkdir', '_posts') unless File.exists?('_posts')
 
-the_post_file_name = hyphen_date + '-' + final_slug.to_s + '.md'
+the_post_file_name = hyphen_date + '-' + final_slug.to_s + '.markdown'
 the_post_file = File.new("_posts/#{the_post_file_name}", 'w')
 the_post_file.puts('---')
 the_post_file.puts("title: \"#{title}\"")

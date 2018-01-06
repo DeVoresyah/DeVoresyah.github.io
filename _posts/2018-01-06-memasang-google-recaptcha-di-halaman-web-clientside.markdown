@@ -36,7 +36,7 @@ function verify(){
 		alert('ReCaptcha is Successfully Verified')
 	} else {
 		alert('ReCaptcha is Not Verified')
-	}
+	}	
 }
 ```
 
