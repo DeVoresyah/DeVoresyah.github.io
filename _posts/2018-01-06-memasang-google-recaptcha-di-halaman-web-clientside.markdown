@@ -4,7 +4,8 @@ author: DeVoresyah
 layout: post
 date: 2018-01-06 22:35
 categories: article
-tags: - Javascript
+tags:
+- Javascript
 - Tutorial
 ---
 <center>
