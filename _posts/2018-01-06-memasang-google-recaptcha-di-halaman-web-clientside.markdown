@@ -9,7 +9,7 @@ tags:
 - Tutorial
 ---
 <center>
-![Google ReCaptcha](https://i0.wp.com/codeforgeek.com/wp-content/uploads/2014/12/banner2.png?resize=770%2C220&ssl=1)
+<img src="https://i0.wp.com/codeforgeek.com/wp-content/uploads/2014/12/banner2.png" alt="Google reCAPTCHA">
 </center>
 
 Google reCaptcha biasanya digunakan untuk mengantisipasi Bot, ya. Karena biasanya orang-orang sering menggunakan Bot untuk registrasi akun secara masal dan otomatis, mengklaim reward dari faucet, dan masih banyak lagi. Selain itu, Google reCaptcha juga baik dipasang agar tidak ada data dalam jumlah besar masuk ke sistem. Maka dari itu Google reCaptcha biasa sering ditemui di halaman registrasi atau login.
@@ -18,7 +18,7 @@ Google reCaptcha biasanya digunakan untuk mengantisipasi Bot, ya. Karena biasany
 
 Pada artikel ini hanya dari Client-side saja, maksudnya pemasangan pada halaman web dan proses verifikasi recaptcha pun dari Client-side dan bukan dari Server-side.
 
-1. Silahkan masuk ke https://www.google.com/recaptcha/admin
+1. Silahkan masuk ke <b><a href="https://www.google.com/recaptcha/admin" target="_blank" rel="nofollow">Google reCAPTCHA</a></b>
 1. Kemudian pada bagian "Register a new site" terdapat beberapa data yang harus diisi
 	1. Pada bagian "Label" bisa diisi dengan domain web
 	1. Kemudian pilih reCAPTCHA V2
