@@ -9,7 +9,7 @@ tags:
 - Tutorial
 ---
 <center>
-<img src="https://i0.wp.com/codeforgeek.com/wp-content/uploads/2014/12/banner2.png" alt="Google reCAPTCHA">
+<img src="https://image.prntscr.com/image/yJIXGaErQ8CIKGbiN2owSQ.png" alt="Google reCAPTCHA">
 </center>
 
 Google reCaptcha biasanya digunakan untuk mengantisipasi Bot, ya. Karena biasanya orang-orang sering menggunakan Bot untuk registrasi akun secara masal dan otomatis, mengklaim reward dari faucet, dan masih banyak lagi. Selain itu, Google reCaptcha juga baik dipasang agar tidak ada data dalam jumlah besar masuk ke sistem. Maka dari itu Google reCaptcha biasa sering ditemui di halaman registrasi atau login.
