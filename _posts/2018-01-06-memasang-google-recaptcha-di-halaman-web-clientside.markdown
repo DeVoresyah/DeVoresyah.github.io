@@ -1,6 +1,6 @@
 ---
 title: "Memasang Google reCAPTCHA di Halaman Web (Client-side)"
-author: DeVoresyah
+author: devoresyah
 layout: post
 date: 2018-01-06 22:35
 categories: article
